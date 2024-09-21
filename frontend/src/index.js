@@ -5,10 +5,10 @@ import App from './App';
 import "./config/i18n";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  //<React.StrictMode>
+  <React.StrictMode>
     <React.Suspense fallback="loading">
       <App />
     </React.Suspense>
-  //</React.StrictMode>
+  </React.StrictMode>
 );
 

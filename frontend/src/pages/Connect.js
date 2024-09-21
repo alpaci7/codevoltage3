@@ -443,7 +443,7 @@ const Connect = ({STATUS, setUser, setIsAuthenticated, MESSAGE, checked, setChec
                                     $Color="var(--color)"
                                     $HoverColor="var(--hover-color)"
                                     onClick={()=>{
-                                        window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&redirect_uri=https://codevoltage.onrender.com:3000/auth/google/redirect&scope=profile+email&client_id=${process.env.REACT_APP_GOOGLE_CLIENT_ID}`;
+                                        window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&redirect_uri=https://codevoltage.vercel.app:3000/auth/google/redirect&scope=profile+email&client_id=${process.env.REACT_APP_GOOGLE_CLIENT_ID}`;
 
                                     }}
                                 >

@@ -37,6 +37,8 @@ app.use('/api',connectRouter);
 app.use('/api/auth',oauthRouter);
 app.use('/api',userRouter);
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
+
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
     app.listen(process.env.PORT , ()=> {

@@ -150,6 +150,7 @@ nav{
         width: 310px;
         height: auto;
         transition: 0.8s ease-in-out;
+        z-index: 2;
 
     }
     .navbar-ul-active div li{

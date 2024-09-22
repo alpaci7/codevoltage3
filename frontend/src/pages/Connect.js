@@ -194,7 +194,7 @@ const Connect = ({STATUS, setUser, setIsAuthenticated, MESSAGE, checked, setChec
                 username : username,
                 password : password,
             }
-            await axios.post("/api/login",data)
+            await axios.post("https://codevoltage-api.vercel.app/api/login",data)
             .then((res)=>{
                 setLoad(true);
                 if(res.data.message === "success"){
